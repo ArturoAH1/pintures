@@ -1,9 +1,11 @@
-function ImageShow(){
-    return(
-        <div>
-            <h1>Image Show</h1>
-        </div>
-    )
+import React from 'react'
+import './ImageList.css'
+function ImageShow  ({image}) {
+  return (
+    <div className='image-list'>
+      <img src={image.urls.small} alt={image.alt_description} />
+    </div>
+  )
 }
 
-export default ImageShow
+export default ImageShow                                    
